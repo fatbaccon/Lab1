@@ -12,14 +12,17 @@ Mạch về cơ bản thực hiện được yêu cầu của bài toán, tuy nh
 ### Mạch controller
 ![image](https://github.com/fatbaccon/Lab1/assets/122776108/bdb9e96d-695f-4d10-92a1-76336862d7a6)
 ![image](https://github.com/fatbaccon/Lab1/assets/122776108/fb290adc-de27-4e1f-ad6f-9d0cfdf2ac1b)
-S0+ = 0                               S0 = S0. S1’.S2’.S3’ 
-S0- = S1 + S2 + S3
-S1+ = D711.S0 + C.S3                  S1 = D711.S0 + C.S3 + S1
-S1- = 0
-S2+ = D2312.S0 + D7.S3                S2 = D2312.S0 + D7.S3 + S2
-S2- = 0
-S3+ = (D711’ + D2312’).S0             S3 = ( (D711’ + D2312’).S0 + S3).S1’.S2’
-S3- = S1 + S2
+
+|        |        |
+|:-------|:------:|
+|  S0+ = 0   |  S0 = S0. S1’.S2’.S3’   |
+|  S0- = S1 + S2 + S3 |   |
+|S1+ = D711.S0 + C.S3 | S1 = D711.S0 + C.S3 + S1|
+|S1- = 0||
+|S2+ = D2312.S0 + D7.S3 | S2 = D2312.S0 + D7.S3 + S2 |
+|S2- = 0||
+|S3+ = (D711’ + D2312’).S0 |S3 = ( (D711’ + D2312’).S0 + S3).S1’.S2’|
+|S3- = S1 + S2||
 
 
 ### Mạch điều khiển để Register chỉ lưu point giá trị đầu tiên
